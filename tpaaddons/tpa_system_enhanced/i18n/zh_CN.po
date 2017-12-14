@@ -1,0 +1,77 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* tpa_systme_enhanced
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-09-15 08:44+0000\n"
+"PO-Revision-Date: 2017-09-15 08:44+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: tpa_system_enhanced
+#: model:ir.ui.menu,name:tpa_system_enhanced.menu_tpa_contacts_all
+msgid "All Contacts"
+msgstr "所有联系人"
+
+#. module: tpa_system_enhanced
+#: model:ir.ui.menu,name:tpa_system_enhanced.menu_tpa_contacts
+msgid "Contacts"
+msgstr "联系人"
+
+#. module: tpa_system_enhanced
+#: model:ir.ui.menu,name:tpa_system_enhanced.menu_tpa_customer
+msgid "Customers"
+msgstr "客户"
+
+#. module: tpa_system_enhanced
+#: model:res.groups,name:tpa_system_enhanced.tpa_empty_group
+msgid "Empty Groups"
+msgstr "无效用户组"
+
+#. module: tpa_system_enhanced
+#: model:ir.ui.menu,name:tpa_system_enhanced.menu_tpa_product_category
+msgid "Product Category"
+msgstr "产品分类"
+
+#. module: tpa_system_enhanced
+#: model:ir.ui.menu,name:tpa_system_enhanced.menu_tpa_products
+msgid "Products"
+msgstr "产品"
+
+#. module: tpa_system_enhanced
+#: model:ir.ui.menu,name:tpa_system_enhanced.menu_tpa_purchasable_products
+msgid "Purchasable Products"
+msgstr "可采购产品"
+
+#. module: tpa_system_enhanced
+#: model:ir.ui.menu,name:tpa_system_enhanced.menu_tpa_sellable_products
+msgid "Sellable Products"
+msgstr "可销售产品"
+
+#. module: tpa_system_enhanced
+#: model:ir.ui.menu,name:tpa_system_enhanced.menu_tpa_data_root
+msgid "TPA Data"
+msgstr "业务数据"
+
+#. module: tpa_system_enhanced
+#: model:ir.ui.menu,name:tpa_system_enhanced.menu_tpa_product_uom
+msgid "Units of Measure"
+msgstr "计量单位"
+
+#. module: tpa_system_enhanced
+#: model:ir.ui.menu,name:tpa_system_enhanced.menu_tpa_product_uom_category
+msgid "Units of Measure Category"
+msgstr "计量单位分类"
+
+#. module: tpa_system_enhanced
+#: model:ir.ui.menu,name:tpa_system_enhanced.menu_tpa_supplier
+msgid "Vendors"
+msgstr "供应商"
+

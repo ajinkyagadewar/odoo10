@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <record id="product_template_form_group_ok" model="ir.ui.view">
+        <field name="name">product.template.form.group_ok</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+        	<xpath expr="//div[@name='options']" position="inside">
+        		<div>
+        			<field name="product_bundled" eval="False"/>
+        			<label for="product_bundled"/>
+        		</div>
+        	</xpath>  
+        </field>
+    </record>
+    
+    <record id="product_template_form_tpa" model="ir.ui.view">
+        <field name="name">product.template.form.tpa</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+    	<field name="arch" type="xml">
+        	<xpath expr="//page[@name='sales']" position="attributes">
+				<attribute name="invisible">1</attribute>
+        	</xpath>
+        	<xpath expr="//page[@name='notes']" position="attributes">
+				<attribute name="invisible">1</attribute>
+        	</xpath>
+    	</field>
+    </record>
+    
+    <record id="product_template_form_inherit_tpa" model="ir.ui.view">
+        <field name="name">product.template.form.inherit.tpa</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="account.product_template_form_view"/>
+    	<field name="arch" type="xml">
+        	<xpath expr="//page[@name='invoicing']" position="attributes">
+				<attribute name="invisible">1</attribute>
+        	</xpath>
+    	</field>
+    </record>
+    
+
+<!-- 
+    <record id="product_template_view_template_property_form_tpa" model="ir.ui.view">
+        <field name="name">product.template.stock.property.form.inherit.tpa</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="stock.view_template_property_form"/>
+    	<field name="arch" type="xml">
+        	<xpath expr="parent:://group[@name='inventory']" position="attributes">
+				<attribute name="invisible">1</attribute>
+        	</xpath>
+    	</field>
+    </record>
+ -->
+    
+    <record id="product_template_only_form_view_tpa" model="ir.ui.view">
+        <field name="name">product.template.product.form.tpa</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+    	<field name="arch" type="xml">
+        	<xpath expr="//field[@name='default_code']" position="attributes">
+				<attribute name="invisible">1</attribute>
+        	</xpath>
+        	<xpath expr="//field[@name='barcode']" position="attributes">
+				<attribute name="invisible">1</attribute>
+        	</xpath>
+    	</field>
+    </record>
+
+<!--    
+    <record id="product_template_form_hs_code_tpa" model="ir.ui.view">
+        <field name="name">product.template.form.hs_code.tpa</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="delivery.product_template_hs_code"/>
+    	<field name="arch" type="xml">
+        	<xpath expr="//field[@name='hs_code']" position="attributes">
+				<attribute name="invisible">1</attribute>
+        	</xpath>
+    	</field>
+    </record>
+ -->     
+</odoo>

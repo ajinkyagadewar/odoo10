@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <record id="sale_order_form_tpa" model="ir.ui.view">
+        <field name="name">sale.order.form.tpa</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+        	<xpath expr="//field[@name='partner_shipping_id']" position="after">
+				<field name="project_name"/>
+				<field name="project_address"/>
+				<field name="project_spec"/>
+				<field name="project_area"/>
+        	</xpath>
+        	<xpath expr="//field[@name='currency_id']" position="after">
+				<field name="team_id"/>
+				<field name="user_id"/>
+        	</xpath>         	  
+        	<xpath expr="//field[@name='payment_term_id']" position="attributes">
+				<attribute name="invisible">1</attribute>
+        	</xpath>
+        	
+            <xpath expr="//field[@name='amount_untaxed']" position="attributes">
+            	<attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='amount_tax']" position="attributes">
+            	<attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='tax_id']" position="attributes">
+            	<attribute name="invisible">True</attribute>
+            </xpath>
+            <xpath expr="//tree/field[@name='tax_id']" position="attributes">
+            	<attribute name="invisible">True</attribute>
+            </xpath>
+
+
+        	<xpath expr="//tree/field[@name='price_total']" position="after">
+					<field name="product_remark"/>
+        	</xpath>
+
+            <xpath expr="//field[@name='order_line']//form//field[@name='product_id']" position="after">
+				<field name="product_bundled"/>
+			</xpath>
+			<!-- 
+			<xpath expr="//field[@name='order_line']//tree//field[@name='price_total']" position="after">
+				<field name="product_bundled"/>
+			</xpath>
+			 -->       	
+        	<xpath expr="//field[@name='order_line']/form//field[@name='name']" position="after">
+				<field name="material_product_line" mode="tree">
+					<tree string="Material Product Details" editable="bottom">
+						<field name="material_product_id" options="{'no_create': True}"/>
+						<field name="material_product_spec"/>
+						<field name="material_product_uom" groups="product.group_uom"/>
+						<field name="material_product_qty"/>
+						<field name="material_product_price_unit"/>
+						<!-- 
+						<field name="material_product_price_total"/>
+						 -->
+					</tree>
+				</field>
+        	</xpath>
+    	            
+        	<xpath expr="//notebook/page[2]" position="attributes">
+				<attribute name="invisible">1</attribute>
+        	</xpath>
+
+        	<xpath expr="//button[@name='action_quotation_send']" position="attributes">
+				<attribute name="invisible">1</attribute>
+        	</xpath>        	
+        	        	  
+        </field>
+    </record>
+
+    
+</odoo>

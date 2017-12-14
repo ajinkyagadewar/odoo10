@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+<data>
+
+    <record id="tpa_empty_group" model="res.groups">
+        <field name="name">Empty Groups</field>
+    </record>
+
+
+	<!-- Contacts -->    
+    <record id="contacts.menu_contacts" model="ir.ui.menu">
+    	<field name="groups_id" eval="[(6, False, [ref('tpa_empty_group')])]"/>
+    </record>
+
+
+	<!-- Sale -->
+	<!--     
+    <record id="sale.menu_sale_order" model="ir.ui.menu">
+    	<field name="groups_id" eval="[(6, False, [ref('tpa_empty_group')])]"/>
+    </record>
+     -->
+    <record id="sale.menu_product_template_action" model="ir.ui.menu">
+    	<field name="groups_id" eval="[(6, False, [ref('tpa_empty_group')])]"/>
+    </record>   
+    <record id="sale.menu_sale_invoicing" model="ir.ui.menu">
+    	<field name="groups_id" eval="[(6, False, [ref('tpa_empty_group')])]"/>
+    </record>    
+    <record id="sale.prod_config_main" model="ir.ui.menu">
+    	<field name="groups_id" eval="[(6, False, [ref('tpa_empty_group')])]"/>
+    </record>
+    <record id="sale.menu_sale_order_invoice" model="ir.ui.menu">
+    	<field name="groups_id" eval="[(6, False, [ref('tpa_empty_group')])]"/>
+    </record>  
+
+	<!-- Hide menus under Purchase -->    
+    <record id="purchase.menu_procurement_management_supplier_name" model="ir.ui.menu">
+    	<field name="groups_id" eval="[(6, False, [ref('tpa_empty_group')])]"/>
+    </record>    
+    <record id="purchase.menu_procurement_partner_contact_form" model="ir.ui.menu">
+    	<field name="groups_id" eval="[(6, False, [ref('tpa_empty_group')])]"/>
+    </record>
+    <!-- 
+    <record id="purchase.menu_purchase_form_action" model="ir.ui.menu">
+    	<field name="groups_id" eval="[(6, False, [ref('tpa_empty_group')])]"/>
+    </record>
+     -->
+    <record id="purchase.menu_purchase_rfq" model="ir.ui.menu">
+    	<field name="groups_id" eval="[(6, False, [ref('tpa_empty_group')])]"/>
+    </record>            
+    <record id="purchase.menu_product_in_config_purchase" model="ir.ui.menu">
+    	<field name="groups_id" eval="[(6, False, [ref('tpa_empty_group')])]"/>
+    </record>
+    
+	<!-- Stock -->
+    <record id="stock.menu_stock_warehouse_mgmt" model="ir.ui.menu">
+    	<field name="groups_id" eval="[(6, False, [ref('tpa_empty_group')])]"/>
+    </record>
+    <record id="stock.menu_stock_sched" model="ir.ui.menu">
+    	<field name="groups_id" eval="[(6, False, [ref('tpa_empty_group')])]"/>
+    </record>
+    <!-- 
+    <record id="stock.menu_product_variant_config_stock" model="ir.ui.menu">
+    	<field name="groups_id" eval="[(6, False, [ref('tpa_empty_group')])]"/>
+    </record>
+     -->      
+    <record id="stock.product_product_menu" model="ir.ui.menu">
+    	<field name="groups_id" eval="[(6, False, [ref('tpa_empty_group')])]"/>
+    </record>
+    <record id="stock.menu_stock_unit_measure_stock" model="ir.ui.menu">
+    	<field name="groups_id" eval="[(6, False, [ref('tpa_empty_group')])]"/>
+    </record>             
+    <record id="stock.menu_product_in_config_stock" model="ir.ui.menu">
+    	<field name="groups_id" eval="[(6, False, [ref('tpa_empty_group')])]"/>
+    </record>
+    <record id="stock.menu_wms_barcode_nomenclature_all" model="ir.ui.menu">
+    	<field name="groups_id" eval="[(6, False, [ref('tpa_empty_group')])]"/>
+    </record>    
+    <record id="stock.menu_reordering_rules_config" model="ir.ui.menu">
+    	<field name="groups_id" eval="[(6, False, [ref('tpa_empty_group')])]"/>
+    </record>
+
+
+	<!-- Account -->
+    <record id="account.menu_account_customer" model="ir.ui.menu">
+    	<field name="groups_id" eval="[(6, False, [ref('tpa_empty_group')])]"/>
+    </record>    
+    <record id="account.menu_product_template_action" model="ir.ui.menu">
+    	<field name="groups_id" eval="[(6, False, [ref('tpa_empty_group')])]"/>
+    </record>    
+    <record id="account.menu_account_supplier" model="ir.ui.menu">
+    	<field name="groups_id" eval="[(6, False, [ref('tpa_empty_group')])]"/>
+    </record>
+    <record id="purchase.menu_product_normal_action_puchased" model="ir.ui.menu">
+    	<field name="groups_id" eval="[(6, False, [ref('tpa_empty_group')])]"/>
+    </record>  
+    <!--   
+    <record id="website.menu_ecommerce_settings" model="ir.ui.menu">
+    	<field name="groups_id" eval="[(6, False, [ref('tpa_empty_group')])]"/>
+    </record>
+     -->
+<!-- 
+    <record id="purchase.menu_product_normal_action_puchased" model="ir.ui.menu">
+    	<field name="groups_id" eval="[(6, False, [ref('tpa_empty_group')])]"/>
+    </record>
+  -->           
+</data>
+
+</odoo>

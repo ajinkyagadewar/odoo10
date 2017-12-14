@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+
+	<!-- Navigation Menu -->
+	<menuitem id="menu_tpa_data_root" name="TPA Data" sequence="250"/>    
+    
+    <!-- TPA Contacts -->
+    <menuitem id="menu_tpa_contacts" name="Contacts" parent="menu_tpa_data_root" sequence="1"/>
+    <menuitem id="menu_tpa_contacts_all" name="All Contacts" parent="menu_tpa_contacts" action="contacts.action_contacts" sequence="1"/>
+	<menuitem id="menu_tpa_customer" name="Customers" parent="menu_tpa_contacts" action="base.action_partner_form" sequence="2"/>
+	<menuitem id="menu_tpa_supplier" name="Vendors" parent="menu_tpa_contacts" action="base.action_partner_supplier_form" sequence="3"/>
+              
+    <!-- TPA Products -->
+    <menuitem id="menu_tpa_products" name="Products" parent="menu_tpa_data_root" sequence="2"/>
+	<menuitem id="menu_tpa_product_uom_category" name="Units of Measure Category" parent="menu_tpa_products" action="product.product_uom_categ_form_action" sequence="1"/>
+	<menuitem id="menu_tpa_product_uom" name="Units of Measure" parent="menu_tpa_products" action="product.product_uom_form_action" sequence="2"/>
+    <menuitem id="menu_tpa_product_category" name="Product Category" parent="menu_tpa_products" action="product.product_category_action_form" sequence="3"/>
+    <menuitem id="menu_tpa_sellable_products" name="Sellable Products" parent="menu_tpa_products" action="product.product_template_action" sequence="4"/>
+    <menuitem id="menu_tpa_purchasable_products" name="Purchasable Products" parent="menu_tpa_products" action="purchase.product_normal_action_puchased" sequence="5"/>
+    <menuitem id="menu_tpa_hardware_products" name="Hardware Products" parent="menu_tpa_products" action="" sequence="6"/>
+</odoo>
